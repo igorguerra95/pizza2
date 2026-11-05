@@ -1,0 +1,6 @@
+{
+  "name": "Assistência Técnica Especializada",
+  "description": "Laboratório de alta precisão em reparo de celulares, computadores, notebooks e microeletrônica avançada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

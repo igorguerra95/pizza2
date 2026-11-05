@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-primary: #E31837;
+  --color-primary-hover: #C5112C;
+  --color-secondary: #FF6B35;
+  --color-secondary-hover: #E8551F;
+  --color-charcoal-950: #0B0908;
+  --color-charcoal-900: #14110F;
+  --color-charcoal-800: #1E1916;
+  --color-charcoal-700: #2C2420;
+  --color-charcoal-600: #3E342E;
+  --color-warm-cream: #F5EFEB;
+  --color-warm-muted: #A89F93;
+}
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  body {
+    background-color: #0B0908;
+    color: #F5EFEB;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Efeito sutil de brasa e gradientes quentes */
+.bg-ember-radial {
+  background: radial-gradient(circle at 50% 0%, rgba(227, 24, 55, 0.15) 0%, rgba(255, 107, 53, 0.05) 45%, transparent 70%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF0DC 0%, #FFB471 60%, #E31837 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Suavização de scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0908;
+}
+::-webkit-scrollbar-thumb {
+  background: #2C2420;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E31837;
+}
+
